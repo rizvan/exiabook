@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:alpha="1"
+        android:background="#34393E" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:gravity="center"
+            android:paddingTop="100dp"
+            android:text="Nom prenom"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="120dp"
+            android:text="Pseudo"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:background="#34393E" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="150dip"
+                android:layout_height="120dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="10dip"
+                android:src="@android:drawable/screen_background_dark_transparent" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/frameLayout1"
+        android:background="#AF2B26" >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="50dip"
+            android:layout_height="25dip"
+            android:layout_gravity="top|right"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:scaleType="center"
+            android:src="@drawable/mail" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/frameLayout2"
+        android:background="#eeecec" >
+
+        	<android.support.v4.view.ViewPager
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:id="@+id/viewpager">
+</android.support.v4.view.ViewPager>
+    </FrameLayout>
+
+</RelativeLayout>

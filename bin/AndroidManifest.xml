@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.privatenav.exia"
+    android:versionCode="1"
+    android:versionName="1.1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:icon="@drawable/iconlauncher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="net.privatenav.exia.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="net.privatenav.exia.Connect"
+            android:label="@string/title_activity_connect"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.privatenav.exia.Pp_menu"
+            android:label="@string/title_activity_pp_menu"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="net.privatenav.exia.Inscription"
+            android:label="@string/title_activity_inscription"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="net.privatenav.exia.Forget_mdp"
+            android:label="@string/title_activity_forget_mdp"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="net.privatenav.exia.List_promo"
+            android:label="@string/title_activity_list_promo"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="net.privatenav.exia.Infos_perso"
+            android:label="@string/title_activity_infos_perso"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="net.privatenav.exia.Parametres_gene"
+            android:label="@string/title_activity_parametres_gene"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="net.privatenav.exia.Send_sms"
+            android:label="@string/title_activity_send_sms"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="net.privatenav.exia.Parrains"
+            android:label="@string/title_activity_parrains"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="net.privatenav.exia.Liste_eleves"
+            android:label="@string/title_activity_liste_eleves"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="net.privatenav.exia.Details_eleve"
+            android:label="@string/title_activity_details_eleve"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="net.privatenav.exia.Choose_photo"
+            android:label="@string/title_activity_choose_photo"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="net.privatenav.exia.Select_promo"
+            android:label="@string/title_activity_select_promo"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="net.privatenav.exia.Publishing"
+            android:label="@string/title_activity_publishing"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="net.privatenav.exia.commentaires"
+            android:label="@string/title_activity_commentaires"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name="net.privatenav.exia.Actu"
+            android:label="@string/title_activity_actu"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="net.privatenav.exia.Niveaux"
+            android:label="@string/title_activity_niveaux"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+    </application>
+
+</manifest>

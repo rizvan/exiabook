@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="spinnerItems">
+        <item>Informations visibles</item>
+        <item>Données personnelles</item>
+        <item>Compétences</item>
+        <item>Déconnexion</item>
+    </string-array>
+    
+<string-array name="delete">
+        <item>Supprimer</item>
+    </string-array>
+    
+</resources>

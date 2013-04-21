@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#AF2B26" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center"
+            android:text="Publications"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFF" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/thepseudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="qsesgsgs"
+        android:textColor="#000" />
+
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ScrollView
+        android:layout_width="200dp"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bgtest" >
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp" >
+
+                <ImageView
+                    android:id="@+id/photopp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:src="@android:drawable/btn_default" />
+
+                <TextView
+                    android:id="@+id/nomprenom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Nom"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFF"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/mypseudo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|left"
+                    android:layout_marginLeft="60dp"
+                    android:text="pseudo"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="25dp"
+                    android:text="prenom"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#FFF" />
+                
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/Button02"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/coterouge"
+                android:gravity="left|center_vertical"
+                android:text="   Actualité"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            
+            <View android:layout_height="fill_parent"
+    			  android:layout_width="2px"
+    			  android:background="#fff"/>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/severalusers"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dp"
+                android:text="  Ma promotion"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            
+            <View android:layout_height="fill_parent"
+    android:layout_width="2px"
+    android:background="#FFF"/>
+
+            <Button
+                android:id="@+id/Button01"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/oneuser"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dp"
+                android:text="  Rechercher"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Button03"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/mail"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dp"
+                android:text="  Publier"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Informations personnelles"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFF" />
+
+            <Button
+                android:id="@+id/Button04"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/settings"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dp"
+                android:text="  Informations"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Button06"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/task"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dp"
+                android:text="  Compétences"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Button05"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/turnoff"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dp"
+                android:text="  Déconnexion"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+    
+
+</LinearLayout>
