@@ -127,6 +127,7 @@ private class CAsyncTask extends AsyncTask<String, Void, String> {
       	    	 	myIntent.putExtra("nom", json_data.getString("nom").toString());
       	    	 	myIntent.putExtra("pseudo", json_data.getString("pseudo").toString());
       	    	 	myIntent.putExtra("photo", json_data.getString("photo").toString());
+      	    	 	myIntent.putExtra("promo", json_data.getString("promo").toString());
       	    	 	myIntent.putExtra("idé", json_data.getString("id").toString());
       	    	 	Connect.this.startActivity(myIntent);
                    Log.e("log_tag", json_data.getString("prenom").toString());

@@ -51,6 +51,7 @@ public class Pp_menu extends FragmentActivity {
 	private static String pseudo = null;
 	private static String photo_p = null;
 	private static String id = null;
+	private static String promo = null;
 	Spinner spinner;
 	private Pp_menu activity;
 	private PagerAdapter mPagerAdapter;
@@ -99,6 +100,7 @@ public class Pp_menu extends FragmentActivity {
     	    pseudo = extras.getString("pseudo");
     	    photo_p = extras.getString("photo");
     	    id = extras.getString("idé");
+    	    promo = extras.getString("promo");
     	}
     	Log.e("log_tag", id.toString());
     	Log.e("log_tag_photo", id.toString());
@@ -251,13 +253,46 @@ public class Pp_menu extends FragmentActivity {
         _Promo.setOnClickListener(new OnClickListener() {
 			
 			public void onClick(View arg0) {
-				Intent myIntent = new Intent(Pp_menu.this, List_promo.class);
-				myIntent.putExtra("prenom", prenom);
-  	    	 	myIntent.putExtra("nom", nom);
-  	    	 	myIntent.putExtra("pseudo",pseudo);
-  	    	 	myIntent.putExtra("photo", photo_p);
-  	    	 	myIntent.putExtra("idé", id);
-  	    	 	Pp_menu.this.startActivity(myIntent);
+				try {
+					Intent myIntent = new Intent(Pp_menu.this, List_promo.class);
+					myIntent.putExtra("prenom", prenom);
+	  	    	 	myIntent.putExtra("nom", nom);
+	  	    	 	myIntent.putExtra("pseudo",pseudo);
+	  	    	 	myIntent.putExtra("photo", photo_p);
+	  	    	 	myIntent.putExtra("idé", id);
+	  	    	 	Pp_menu.this.startActivity(myIntent);
+				} catch (Exception e) {
+					Log.e("log_tag", "error ribbon");
+				}
+			}
+		});
+        
+      //buttonRibbon mypromo
+        Button _MyPromo = (Button)findViewById(R.id.button1);
+        _MyPromo.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View arg0) {
+				try {
+					Intent myIntent = new Intent(Pp_menu.this, Liste_eleves.class);
+					myIntent.putExtra("promo", promo);
+					Pp_menu.this.startActivity(myIntent);
+				} catch (Exception e) {
+					Log.e("log_tag", "error ribbon");
+				}
+			}
+		});
+        
+      //ButtonRibbon deconnection
+        Button _Deco = (Button)findViewById(R.id.Button05);
+        _Deco.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				try {
+					Intent myIntent = new Intent(Pp_menu.this, Connect.class);
+					Pp_menu.this.startActivity(myIntent);
+				} catch (Exception e) {
+					Log.e("log_tag", "error ribbon");
+				}
 			}
 		});
          
