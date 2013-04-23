@@ -1,19 +1,22 @@
 package net.privatenav.exia;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Vector;
 
-import net.privatenav.exia.Pp_menu.MyPagerAdapter;
 import android.os.Bundle;
-import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageButton;
 
 
 public class Niveaux extends FragmentActivity {
@@ -44,8 +47,45 @@ public class Niveaux extends FragmentActivity {
 		ViewPager pager = (ViewPager) super.findViewById(R.id.viewpager);
 		// Affectation de l'adapter au ViewPager
 		pager.setAdapter(this.mPagerAdapter);
-		/*String tempp = passeur();
-		Toast.makeText(Details_eleve.this,tempp ,Toast.LENGTH_LONG).show();*/
+
+		ImageButton _maj = (ImageButton)findViewById(R.id.imageButton1);
+		_maj.setOnClickListener(new OnClickListener() {
+			
+			public void onClick(View v) {
+				AlertDialog.Builder builder = new AlertDialog.Builder(Niveaux.this);
+				builder.setCancelable(true);
+				builder.setItems(R.array.maj, new DialogInterface.OnClickListener(){
+		               public void onClick(DialogInterface dialog, int which) {
+		            	   switch (which) {
+						case 0:
+							AlertDialog.Builder builder1 = new AlertDialog.Builder(Niveaux.this);
+					        builder1.setMessage("Mettre à jour vos compétences ?")
+					               .setPositiveButton("Supprimer", new DialogInterface.OnClickListener() {
+					                   public void onClick(DialogInterface dialog, int id) {
+					                	 
+					   							  
+					   						/*CAsyncTask2 task2 = new CAsyncTask2 ();
+					   						task2.execute(o.get("idfix").toString());
+					   						regenerer();*/
+					                   }
+					               })
+					               .setNegativeButton("Annuler", new DialogInterface.OnClickListener() {
+					                   public void onClick(DialogInterface dialog, int id) {
+					                       // User cancelled the dialog
+					                   }
+					               });
+						    builder1.create();
+						    builder1.show();
+							break;
+						}
+		            	
+		               }
+		        });
+				
+				AlertDialog alert = builder.create();
+				alert.show();
+			}
+		});
 	}
 
 	public class MyPagerAdapter extends FragmentPagerAdapter {

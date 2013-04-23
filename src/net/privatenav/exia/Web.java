@@ -35,6 +35,9 @@ public class Web extends Fragment {
 	
 	private View V = null;
 	private String id = null;
+	private float htmlNB = (Float) null;
+	private float jsNB = (Float) null;
+	private float phpNB = (Float) null;
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -105,6 +108,9 @@ public class Web extends Fragment {
 	               al.add(json_data.getString("html").toString());
 	               al.add(json_data.getString("js").toString());
 	               al.add(json_data.getString("php").toString());
+	               htmlNB = Float.parseFloat(json_data.getString("html").toString());
+	               jsNB = Float.parseFloat(json_data.getString("js").toString());
+	               phpNB = Float.parseFloat(json_data.getString("php").toString());
 	           }   
 	        
 	        }

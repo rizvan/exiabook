@@ -35,6 +35,12 @@ public class Programmation extends Fragment{
 	
 	private View V = null;
 	private String id = null;
+	private float cNB =(Float) null;
+	private float cppNB =(Float) null;
+	private float netNB =(Float) null;
+	private float javaNB =(Float) null;
+	private float bddNB =(Float) null;
+	private float mobileNB =(Float) null;
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -108,6 +114,12 @@ public class Programmation extends Fragment{
 	               al.add(json_data.getString("java").toString());
 	               al.add(json_data.getString("bdd").toString());
 	               al.add(json_data.getString("mobile").toString());
+	               cNB = Float.parseFloat(json_data.getString("c").toString());
+	               cppNB = Float.parseFloat(json_data.getString("c++").toString());
+	               netNB = Float.parseFloat(json_data.getString(".net").toString());
+	               javaNB =Float.parseFloat(json_data.getString("java").toString());
+	               bddNB = Float.parseFloat(json_data.getString("bdd").toString());
+	               mobileNB = Float.parseFloat(json_data.getString("mobile").toString());
 	           }   
 	        
 	        }

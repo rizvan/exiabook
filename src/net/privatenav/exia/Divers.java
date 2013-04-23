@@ -35,6 +35,7 @@ public class Divers extends Fragment{
 	
 	private View V = null;
 	private String id = null;
+	private float graphNB = (Float) null;
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -103,6 +104,7 @@ public class Divers extends Fragment{
 	        	{
 	               json_data = jArray.getJSONObject(i); 
 	               al.add(json_data.getString("graphisme").toString());
+	               graphNB = Float.parseFloat(json_data.getString("graphisme").toString());
 	           }   
 	        
 	        }
