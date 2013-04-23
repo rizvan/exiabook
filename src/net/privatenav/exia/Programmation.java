@@ -26,7 +26,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.RatingBar;
+import android.widget.TextView;
 
 public class Programmation extends Fragment{
 	
@@ -129,26 +132,71 @@ public class Programmation extends Fragment{
         		RatingBar _c = (RatingBar)V.findViewById(R.id.ratingBar1);
         		Float c = Float.parseFloat(_list.get(0));
         		_c.setRating((float)c);
+        		_c.setVisibility(V.VISIBLE);
+        		
+        		TextView _ctext = (TextView)V.findViewById(R.id.textView2);
+        		_ctext.setVisibility(V.VISIBLE);
+        		
+        		ImageView _cimg = (ImageView)V.findViewById(R.id.imageView1);
+        		_cimg.setVisibility(V.VISIBLE);
         		
         		RatingBar _cpp = (RatingBar)V.findViewById(R.id.RatingBar01);
         		Float cpp = Float.parseFloat(_list.get(1));
         		_cpp.setRating((float)cpp);
+        		_cpp.setVisibility(V.VISIBLE);
+        		
+        		TextView _cpptext = (TextView)V.findViewById(R.id.textView3);
+        		_cpptext.setVisibility(V.VISIBLE);
+        		
+        		ImageView _cppimg = (ImageView)V.findViewById(R.id.imageView2);
+        		_cppimg.setVisibility(V.VISIBLE);
         		
         		RatingBar _net = (RatingBar)V.findViewById(R.id.RatingBar02);
         		Float net = Float.parseFloat(_list.get(2));
         		_net.setRating((float)net);
+        		_net.setVisibility(V.VISIBLE);
+        		
+        		TextView _nettext = (TextView)V.findViewById(R.id.textView4);
+        		_nettext.setVisibility(V.VISIBLE);
+        		
+        		ImageView _netimg = (ImageView)V.findViewById(R.id.imageView3);
+        		_netimg.setVisibility(V.VISIBLE);
         		
         		RatingBar _java = (RatingBar)V.findViewById(R.id.RatingBar03);
         		Float java = Float.parseFloat(_list.get(2));
         		_java.setRating((float)java);
+        		_java.setVisibility(V.VISIBLE);
+        		
+        		TextView _javatext = (TextView)V.findViewById(R.id.textView5);
+        		_javatext.setVisibility(V.VISIBLE);
+        		
+        		ImageView _javaimg = (ImageView)V.findViewById(R.id.imageView4);
+        		_javaimg.setVisibility(V.VISIBLE);
         		
         		RatingBar _bdd = (RatingBar)V.findViewById(R.id.RatingBar04);
         		Float bdd = Float.parseFloat(_list.get(2));
         		_bdd.setRating((float)bdd);
+        		_bdd.setVisibility(V.VISIBLE);
+        		
+        		TextView _bddtext = (TextView)V.findViewById(R.id.textView6);
+        		_bddtext.setVisibility(V.VISIBLE);
+        		
+        		ImageView _bddimg = (ImageView)V.findViewById(R.id.imageView5);
+        		_bddimg.setVisibility(V.VISIBLE);
         		
         		RatingBar _mobile = (RatingBar)V.findViewById(R.id.RatingBar05);
         		Float mobile = Float.parseFloat(_list.get(2));
         		_mobile.setRating((float)mobile);
+        		_mobile.setVisibility(V.VISIBLE);
+        		
+        		TextView _mobiletext = (TextView)V.findViewById(R.id.textView7);
+        		_mobiletext.setVisibility(V.VISIBLE);
+        		
+        		ImageView _mobileimg = (ImageView)V.findViewById(R.id.imageView6);
+        		_mobileimg.setVisibility(V.VISIBLE);
+        		
+        		ProgressBar _prog = (ProgressBar)V.findViewById(R.id.progressBar1);
+        		_prog.setVisibility(V.INVISIBLE);
         	}
         }
         
