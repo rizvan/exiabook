@@ -67,6 +67,7 @@ public class Web extends Fragment {
         	ArrayList<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
         	nameValuePairs.add(new BasicNameValuePair("id",arg[0]));
     		InputStream is = null;
+    		ArrayList<String> al = new ArrayList<String>();
     		//http post
     		try{
     		        HttpClient httpclient = new DefaultHttpClient();
@@ -97,7 +98,7 @@ public class Web extends Fragment {
     		try{
 	    		JSONArray jArray = new JSONArray(result);
 	        	JSONObject json_data=null;
-	        	ArrayList<String> al = new ArrayList<String>();
+	        	
 	        	for(int i=0;i<jArray.length();i++)
 	        	{
 	               json_data = jArray.getJSONObject(i); 
@@ -105,18 +106,18 @@ public class Web extends Fragment {
 	               al.add(json_data.getString("js").toString());
 	               al.add(json_data.getString("php").toString());
 	           }   
-	        return al;
+	        
 	        }
 	        catch(JSONException e1){
-	        //	Toast.makeText(getBaseContext(),e1.toString() ,Toast.LENGTH_LONG).show();
+	        	//Toast.makeText(getBaseContext(),e1.toString() ,Toast.LENGTH_LONG).show();
 	        	Log.e("TAG_json", e1.toString());
 	        } catch (ParseException e1) {
 	        	//Toast.makeText(getBaseContext(),e1.toString() ,Toast.LENGTH_LONG).show();
 	        	Log.e("TAG_json", e1.toString());
 	  	}
             
-            return null;
-        } // doInBackground ();
+    		return al;
+        } 
         
         protected void onPostExecute (ArrayList<String> _list) {
         	if(_list == null)
@@ -126,19 +127,18 @@ public class Web extends Fragment {
         	else
         	{
         		RatingBar _html = (RatingBar)V.findViewById(R.id.ratingBar1);
-        		Float html = Float.parseFloat(_list.get(1));
-        		_html.setRating(html);
+        		Float html = Float.parseFloat(_list.get(0));
+        		_html.setRating((float)html);
         		
-        		RatingBar _js = (RatingBar)V.findViewById(R.id.ratingBar1);
-        		Float js = Float.parseFloat(_list.get(2));
-        		_js.setRating(js);
+        		RatingBar _js = (RatingBar)V.findViewById(R.id.RatingBar01);
+        		Float js = Float.parseFloat(_list.get(1));
+        		_js.setRating((float)js);
         		
-        		RatingBar _php = (RatingBar)V.findViewById(R.id.ratingBar1);
-        		Float php = Float.parseFloat(_list.get(3));
-        		_php.setRating(php);
-        		
+        		RatingBar _php = (RatingBar)V.findViewById(R.id.RatingBar02);
+        		Float php = Float.parseFloat(_list.get(2));
+        		_php.setRating((float)php);
         	}
-        } // onPostExecute ();
+        }
         
 	}
 
