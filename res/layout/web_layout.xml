@@ -36,7 +36,8 @@
         android:layout_marginTop="21dp"
         android:text="HTML - CSS"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#000" />
+        android:textColor="#000"
+        android:visibility="invisible" />
 
     <ImageView
         android:id="@+id/imageView1"
@@ -45,7 +46,8 @@
         android:layout_alignLeft="@+id/textView2"
         android:layout_below="@+id/textView2"
         android:layout_marginTop="20dp"
-        android:src="@drawable/html" />
+        android:src="@drawable/html"
+        android:visibility="invisible" />
 
     <RatingBar
         android:id="@+id/ratingBar1"
@@ -54,7 +56,8 @@
         android:layout_alignTop="@+id/imageView1"
         android:layout_toRightOf="@+id/textView2"
         android:numStars="3"
-        android:rating="0.5" />
+        android:rating="0.5"
+        android:visibility="invisible" />
 
     <RatingBar
         android:id="@+id/RatingBar01"
@@ -63,7 +66,8 @@
         android:layout_alignLeft="@+id/ratingBar1"
         android:layout_alignTop="@+id/imageView2"
         android:numStars="3"
-        android:rating="0.5" />
+        android:rating="0.5"
+        android:visibility="invisible" />
 
     <RatingBar
         android:id="@+id/RatingBar02"
@@ -72,7 +76,8 @@
         android:layout_alignLeft="@+id/RatingBar01"
         android:layout_alignTop="@+id/imageView3"
         android:numStars="3"
-        android:rating="0.5" />
+        android:rating="0.5"
+        android:visibility="invisible" />
 
     <TextView
         android:id="@+id/textView3"
@@ -82,7 +87,8 @@
         android:layout_below="@+id/ratingBar1"
         android:text="JavaScript"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#000" />
+        android:textColor="#000"
+        android:visibility="invisible" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -91,7 +97,8 @@
         android:layout_alignLeft="@+id/textView3"
         android:layout_below="@+id/textView3"
         android:layout_marginTop="16dp"
-        android:src="@drawable/js" />
+        android:src="@drawable/js"
+        android:visibility="invisible" />
 
     <TextView
         android:id="@+id/textView4"
@@ -101,7 +108,8 @@
         android:layout_below="@+id/RatingBar01"
         android:text="PHP"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#000" />
+        android:textColor="#000"
+        android:visibility="invisible" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -110,6 +118,14 @@
         android:layout_alignLeft="@+id/textView4"
         android:layout_below="@+id/textView4"
         android:layout_marginTop="20dp"
-        android:src="@drawable/php" />
+        android:src="@drawable/php"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
 
 </RelativeLayout>

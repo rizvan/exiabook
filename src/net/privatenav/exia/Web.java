@@ -26,7 +26,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.RatingBar;
+import android.widget.TextView;
 
 public class Web extends Fragment {
 	
@@ -126,14 +129,38 @@ public class Web extends Fragment {
         		RatingBar _html = (RatingBar)V.findViewById(R.id.ratingBar1);
         		Float html = Float.parseFloat(_list.get(0));
         		_html.setRating((float)html);
+        		_html.setVisibility(V.VISIBLE);
+        		
+        		TextView _htmltext = (TextView)V.findViewById(R.id.textView2);
+        		_htmltext.setVisibility(V.VISIBLE);
+        		
+        		ImageView _htmlimg =(ImageView)V.findViewById(R.id.imageView1);
+        		_htmlimg.setVisibility(V.VISIBLE);
         		
         		RatingBar _js = (RatingBar)V.findViewById(R.id.RatingBar01);
         		Float js = Float.parseFloat(_list.get(1));
         		_js.setRating((float)js);
+        		_js.setVisibility(V.VISIBLE);
+        		
+        		TextView _jstext = (TextView)V.findViewById(R.id.textView3);
+        		_jstext.setVisibility(V.VISIBLE);
+        		
+        		ImageView _jsimg =(ImageView)V.findViewById(R.id.imageView2);
+        		_jsimg.setVisibility(V.VISIBLE);
         		
         		RatingBar _php = (RatingBar)V.findViewById(R.id.RatingBar02);
         		Float php = Float.parseFloat(_list.get(2));
         		_php.setRating((float)php);
+        		_php.setVisibility(V.VISIBLE);
+        		
+        		TextView _phptext = (TextView)V.findViewById(R.id.textView4);
+        		_phptext.setVisibility(V.VISIBLE);
+        		
+        		ImageView _phpimg =(ImageView)V.findViewById(R.id.imageView3);
+        		_phpimg.setVisibility(V.VISIBLE);
+        		
+        		ProgressBar _prog = (ProgressBar)V.findViewById(R.id.progressBar1);
+        		_prog.setVisibility(V.INVISIBLE);
         	}
         }
         
